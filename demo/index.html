@@ -1,0 +1,30 @@
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <div id="userList">
+            <pagination :totalCount="paginationOption.totalCount"
+                        :pageSize="paginationOption.pageSize"></pagination>
+        </div>
+
+        <script src="../src/Pagination.js"></script>
+        <script src="scripts/vue.js"></script>
+        <script>
+            var app = new Vue({
+                el: '#userList',
+                data: function(){
+                    return {
+                        paginationOption: {
+                            totalCount: 10,
+                            pageSize: 10
+                        },
+                    }
+                },
+                components: {
+                    "pagination": Pagination
+                }
+            })
+        </script>
+    </body>
+</html>
