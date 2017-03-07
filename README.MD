@@ -38,8 +38,7 @@ var app = new Vue({
 ``` html
 <div id="list">
     <pagination :total-count="paginationOption.totalCount"
-                :page-size="paginationOption.pageSize"
-                :page-index="paginationOption.pageIndex"
+                :page-size="paginationOption.pageSize"                
                 @page="goPage"></pagination>
 </div>
 ```
